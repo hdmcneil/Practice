@@ -4,10 +4,13 @@ class Dino
     def initialize(name, period) 
         @name = name
         @period = period
-       
-      
+        @color = "green" 
     end
 
+    def roar
+        puts "Roar! I am a #{name} from the #{period} period."
+    end
+    
 end
 
 dino1 = Dino.new("Coloradisaurus", "Triassic")
@@ -19,17 +22,10 @@ p dino2
 dino3 = Dino.new("Tyrannosaurus", "Cretaceous")
 p dino3
 
-def roar
-    puts "Roar! I am a #{name} from the #{period}."
-end
 
-roar(dino1)
-puts "Welcome, #{dino1.name}!"
+dino1.roar
+dino2.roar
+dino3.roar
 
-roar(dino2)
-puts "Welcome, #{dino2.name}!"
-
-roar(dino3)
-puts "Welcome, #{dino3.name}!"
 
 
